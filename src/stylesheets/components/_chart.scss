@@ -1,0 +1,49 @@
+.c-chart {}
+
+.c-chart__table {
+  width: 100%;
+}
+
+.c-chart__row {}
+
+
+// Cells -------------------------------
+
+.c-chart__cell {
+  @media (max-width: 37.4375em) {
+    display: block;
+  }
+}
+
+.c-chart__cell--header {
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
+
+  @media (max-width: 37.4375em) {
+    text-align: left;
+  }
+}
+
+.c-chart__cell--data {
+  width: 100%;
+}
+
+
+// Bars --------------------------------
+
+.c-chart__bar {
+  font-weight: 600;
+  overflow: hidden;
+  padding: 0.25em 1em;
+  text-align: right;
+}
+
+.c-chart__bar--eucalyptus {
+  background-color: $eucalyptus;
+  color: $white;
+}
+
+.c-chart__bar--white {
+  background-color: $white;
+}

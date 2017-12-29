@@ -1,0 +1,78 @@
+.c-section {}
+
+
+// Paddings ----------------------------
+
+.c-section {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+
+// Colors ------------------------------
+
+.c-section--alabaster {
+  background-color: $alabaster;
+}
+
+.c-section--alto {
+  background-color: $alto;
+}
+
+.c-section--aqua-forest {
+  background-color: $aqua-forest;
+  color: $white;
+}
+
+.c-section--mercury {
+  background-color: $mercury;
+}
+
+.c-section--sea-mist {
+  background-color: $sea-mist;
+}
+
+
+// Alignment ---------------------------
+
+.c-section--center {
+  text-align: center;
+}
+
+
+// Elements ----------------------------
+
+.c-section__container {
+  &::before,
+  &::after {
+    background-image: svg-encode('<svg viewBox="0 0 3 1"><circle cx=".5" cy=".5" r=".5" fill="#{$dusty-gray}"/></svg>');
+    content: "";
+    display: block;
+    height: 2px;
+
+    .c-section--aqua-forest & {
+      background-image: svg-encode('<svg viewBox="0 0 3 1"><circle cx=".5" cy=".5" r=".5" fill="#{$white}"/></svg>');
+    }
+  }
+
+  &::before {
+    margin-bottom: 2em;
+  }
+
+  &::after {
+    margin-top: 2em;
+  }
+}
+
+.c-section__item {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

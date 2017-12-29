@@ -1,0 +1,19 @@
+.s-entry-content {}
+
+
+// Margins -----------------------------
+
+.s-entry-content {
+  p {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.c-title {
+  @include fluid-type(font-size, 18.75em, 63em, 1.5em, 2em);
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.c-title--border {
+  padding-bottom: 1em;
+  position: relative;
+
+  &::after {
+    background-color: $eucalyptus;
+    border-radius: 0.0625em;
+    bottom: 0;
+    content: "";
+    height: 0.125em;
+    left: 50%;
+    position: absolute;
+    transform: translatex(-50%);
+    width: 5em;
+
+    .c-section--aqua-forest & {
+      background-color: currentcolor;
+    }
+  }
+}

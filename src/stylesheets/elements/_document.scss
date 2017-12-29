@@ -1,0 +1,6 @@
+html {
+  @include fluid-type(font-size, 18.75em, 78.75em, 1em, 1.25em);
+  color: $tundora;
+  font-family: Display Sans, sans-serif;
+  line-height: 1.5;
+}

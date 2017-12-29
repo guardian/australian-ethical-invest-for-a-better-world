@@ -1,0 +1,56 @@
+.c-listicle {}
+
+.c-listicle__list {
+  counter-reset: listicle;
+  margin: -2em 0 0 -2em;
+
+  @media (min-width: 48em) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.c-listicle__item {
+  align-items: center;
+  counter-increment: listicle;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0 0 2em;
+  position: relative;
+
+  @media (min-width: 37.5em) and (max-width: 47.9375em), (min-width: 64em) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 48em) {
+    flex-basis: 50%;
+  }
+
+  &::before {
+    background-color: $eucalyptus;
+    border-radius: 50%;
+    color: $white;
+    content: counter(listicle);
+    font-size: 1.25em;
+    font-weight: 600;
+    position: absolute;
+    text-align: center;
+    transform: translatex(-3.0625rem);
+    width: 1.5em;
+
+    @media (min-width: 37.5em) and (max-width: 47.9375em), (min-width: 64em) {
+      transform: translate(0, -3.0625rem);
+    }
+  }
+}
+
+.c-listicle__icon {
+  height: auto;
+  margin-bottom: 1em;
+  width: 8em;
+
+  @media (min-width: 37.5em) and (max-width: 47.9375em), (min-width: 64em) {
+    flex: none;
+    margin: 0 1em 0 0;
+  }
+}
