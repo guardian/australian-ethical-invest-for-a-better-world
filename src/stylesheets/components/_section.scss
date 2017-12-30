@@ -1,8 +1,3 @@
-.c-section {}
-
-
-// Paddings ----------------------------
-
 .c-section {
   padding-bottom: 2em;
   padding-top: 2em;
@@ -33,13 +28,6 @@
 }
 
 
-// Alignment ---------------------------
-
-.c-section--center {
-  text-align: center;
-}
-
-
 // Elements ----------------------------
 
 .c-section__container {
@@ -61,18 +49,5 @@
 
   &::after {
     margin-top: 2em;
-  }
-}
-
-.c-section__item {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 }

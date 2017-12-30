@@ -1,0 +1,17 @@
+.u-vertical-space {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.u-vertical-space--large {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
