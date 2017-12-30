@@ -1,0 +1,25 @@
+.c-anchor {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes hover {
+  100% {
+    transform: translatey(0.5em);
+  }
+}
+
+.c-anchor__link {
+  animation: 0.5s ease-in-out infinite alternate hover;
+
+  &:hover {
+    color: $web-orange;
+  }
+}
+
+.c-anchor__icon {
+  fill: currentcolor;
+  height: 2.5em;
+  pointer-events: none;
+  width: 2.5em;
+}

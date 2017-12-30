@@ -1,6 +1,8 @@
 %u-transition,
 .u-transition {
   transition-duration: 0.125s;
-  transition-property: background-color;
+  transition-property:
+    background-color,
+    color;
   transition-timing-function: ease-out;
 }
