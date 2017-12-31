@@ -1,49 +1,93 @@
 .c-chart {}
 
-.c-chart__table {
+
+// Table -------------------------------
+
+.c-chart-table {
   width: 100%;
 }
 
-.c-chart__row {}
+.c-chart-table__row {}
 
-
-// Cells -------------------------------
-
-.c-chart__cell {
-  @media (max-width: 37.4375em) {
-    display: block;
-  }
-}
-
-.c-chart__cell--header {
+.c-chart-table__heading {
   font-weight: 600;
+  line-height: 1.25;
+  padding-right: 1em;
   text-align: right;
-  white-space: nowrap;
 
-  @media (max-width: 37.4375em) {
-    text-align: left;
+  @media (min-width: 48em) {
+    white-space: nowrap;
+  }
+
+  .c-chart-table__row:not(:last-child) & {
+    padding-bottom: 1em;
   }
 }
 
-.c-chart__cell--data {
+.c-chart-table__data {
   width: 100%;
+
+  .c-chart-table__row:not(:last-child) & {
+    padding-bottom: 1em;
+  }
 }
 
-
-// Bars --------------------------------
-
-.c-chart__bar {
+.c-chart-table__bar {
   font-weight: 600;
-  overflow: hidden;
   padding: 0.25em 1em;
   text-align: right;
 }
 
-.c-chart__bar--eucalyptus {
+.c-chart-table__bar--eucalyptus {
   background-color: $eucalyptus;
   color: $white;
 }
 
-.c-chart__bar--white {
+.c-chart-table__bar--white {
+  background-color: $white;
+}
+
+
+// Legend ------------------------------
+
+.c-chart-legend {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+
+  @media (min-width: 48em) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.c-chart-legend__item {
+  display: flex;
+  font-size: 0.875em;
+  font-weight: 600;
+
+  &:not(:last-child) {
+    margin-bottom: 1em;
+
+    @media (min-width: 48em) {
+      margin: 0 2em 0 0;
+    }
+  }
+
+  &::before {
+    border-radius: 0.25em;
+    content: "";
+    flex: none;
+    margin-right: 0.5em;
+    width: 1.5em;
+  }
+}
+
+.c-chart-legend__item--eucalyptus::before {
+  background-color: $eucalyptus;
+}
+
+.c-chart-legend__item--white::before {
   background-color: $white;
 }
