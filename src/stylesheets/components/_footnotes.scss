@@ -1,0 +1,14 @@
+.c-footnotes {
+  font-size: 0.875em;
+}
+
+.c-footnotes__item {
+  padding-left: 1.625rem;
+}
+
+.c-footnotes__reference {
+  display: inline-block;
+  margin-left: -1.625rem;
+  white-space: nowrap;
+  width: calc(1.625rem - 0.25em);
+}
