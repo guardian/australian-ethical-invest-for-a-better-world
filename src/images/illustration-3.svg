@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+  <path fill="none" stroke="#1F8649" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5" d="M280 110H164.4c-6.31 0-11.04-5.77-9.81-11.96l16-80c.93-4.67 5.04-8.04 9.81-8.04H264c4.77 0 8.87 3.36 9.81 8.04l16 80c1.23 6.19-3.5 11.96-9.81 11.96zM167.19 35h110M162.19 60h120M157.19 85h130M197.19 10l-10 100M222.19 10v100M247.19 10l10 100M192.19 130h60v10h-60zM217.19 110h10v20h-10zM182.19 140h80"/>
+  <path fill="none" stroke="#F7A800" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.333" d="M93.74 120H16.67c-4.21 0-7.36-3.85-6.54-7.97L20.8 58.69a6.662 6.662 0 0 1 6.54-5.36h55.74a6.67 6.67 0 0 1 6.54 5.36l10.67 53.33c.81 4.13-2.34 7.98-6.55 7.98zM18.54 70h73.33M15.2 86.67h80M11.87 103.33h86.67M38.54 53.33L31.87 120M55.2 53.33V120M71.87 53.33L78.54 120M35.2 133.33h40V140h-40zM51.87 120h6.67v13.33h-6.67zM28.54 140h53.33"/>
+  <path fill="#4A4A4A" fill-rule="evenodd" d="M127.4 47.5l-20 30 15-5v30h10v-30l15 5z" clip-rule="evenodd"/>
+</svg>

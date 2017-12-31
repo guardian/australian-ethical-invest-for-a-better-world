@@ -1,0 +1,38 @@
+.c-cards {}
+
+.c-cards__list {
+  margin: -2em 0 0 -2em;
+}
+
+.c-cards__item {
+  padding: 2em 0 0 2em;
+  text-align: center;
+
+  @media (min-width: 37.5em) {
+    align-items: center;
+    display: flex;
+    text-align: left;
+
+    &.c-cards__item--swap {
+      text-align: right;
+    }
+  }
+}
+
+.c-cards__cover {
+  margin-bottom: 1em;
+
+  @media (min-width: 37.5em) {
+    flex: 0 0 37.5%;
+    margin: 0 2em 0 0;
+
+    .c-cards__item--swap & {
+      margin: 0 0 0 2em;
+      order: 1;
+    }
+  }
+}
+
+.c-cards__media {
+  max-width: 20em;
+}
