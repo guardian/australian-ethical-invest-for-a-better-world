@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "browser-sync": "^2.19.0",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-htmlmin": "^3.0.0",
@@ -10,10 +11,13 @@
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-surge": "^0.1.0",
+    "run-sequence": "^2.2.0"
   },
   "scripts": {
     "build": "gulp build",
+    "stage": "gulp stage",
     "start": "gulp"
   }
 }
