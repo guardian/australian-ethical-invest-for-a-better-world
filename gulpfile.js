@@ -10,6 +10,7 @@ const runSequence = require('run-sequence')
 const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps')
 const surge = require('gulp-surge')
+const uglify = require('gulp-uglify')
 
 gulp.task('browser-sync', () =>
   browserSync.init({
@@ -18,7 +19,7 @@ gulp.task('browser-sync', () =>
 )
 
 gulp.task('build', callback =>
-  runSequence('clean', ['images', 'stylesheets', 'templates'], callback)
+  runSequence('clean', ['images', 'scripts', 'stylesheets', 'templates'], callback)
 )
 
 gulp.task('clean', () =>
@@ -30,6 +31,16 @@ gulp.task('default', ['build', 'watch'])
 gulp.task('images', () =>
   gulp.src('src/images/*')
     .pipe(gulp.dest('dest/images'))
+)
+
+gulp.task('scripts', () =>
+  gulp.src('src/scripts/*.js')
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write(''))
+    .pipe(gulp.dest('dest/scripts'))
+    .on('end', browserSync.reload)
 )
 
 gulp.task('stage', ['build'], () =>
@@ -72,6 +83,7 @@ gulp.task('templates', () =>
 
 gulp.task('watch', ['browser-sync'], () => {
   gulp.watch('src/images/*', ['images'])
+  gulp.watch('src/scripts/**/*.js', ['scripts'])
   gulp.watch('src/stylesheets/**/*.scss', ['stylesheets'])
   gulp.watch('src/templates/**/*.njk', ['templates'])
 })
