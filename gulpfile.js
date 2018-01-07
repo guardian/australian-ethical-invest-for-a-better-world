@@ -1,5 +1,6 @@
 const autoprefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync')
+const concat = require('gulp-concat')
 const del = require('del')
 const gulp = require('gulp')
 const htmlmin = require('gulp-htmlmin')
@@ -34,10 +35,14 @@ gulp.task('images', () =>
 )
 
 gulp.task('scripts', () =>
-  gulp.src('src/scripts/*.js')
+  gulp.src([
+    'node_modules/when-in-viewport/dist/whenInViewport.js',
+    'src/scripts/*.js'
+  ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(uglify())
+      .pipe(concat('index.js'))
+      .pipe(uglify())
     .pipe(sourcemaps.write(''))
     .pipe(gulp.dest('dest/scripts'))
     .on('end', browserSync.reload)
