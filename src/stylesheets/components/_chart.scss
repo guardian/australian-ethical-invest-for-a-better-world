@@ -4,38 +4,38 @@
 // Table -------------------------------
 
 .c-chart-table {
+  background-image: svg-encode('<svg viewBox="0 0 3 3"><circle cx=".5" cy=".5" r=".5" fill="#{$dusty-gray}"/></svg>');
+  background-size: 6px 6px;
   width: 100%;
 }
 
 .c-chart-table__row {}
 
 .c-chart-table__heading {
+  @include fluid-type(padding-right, 18.75em, 63em, 0.5em, 1em);
+  background-color: $sea-mist;
   font-weight: 600;
   line-height: 1.25;
-  padding-right: 1em;
   text-align: right;
 
   @media (min-width: 48em) {
     white-space: nowrap;
   }
-
-  .c-chart-table__row:not(:last-child) & {
-    padding-bottom: 1em;
-  }
 }
 
 .c-chart-table__data {
+  @include fluid-type(padding, 18.75em, 63em, 0.5em, 1em);
   width: 100%;
-
-  .c-chart-table__row:not(:last-child) & {
-    padding-bottom: 1em;
-  }
 }
 
 .c-chart-table__bar {
   font-weight: 600;
   padding: 0.25em 1em;
   text-align: right;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
 }
 
 .c-chart-table__bar--eucalyptus {

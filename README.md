@@ -7,6 +7,12 @@ npm install
 npm start
 ```
 
+## Staging
+
+```
+npm run stage
+```
+
 ## Production
 
 ```
