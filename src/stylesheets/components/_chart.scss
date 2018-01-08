@@ -29,7 +29,9 @@
 }
 
 .c-chart-table__bar {
+  direction: rtl;
   font-weight: 600;
+  overflow: hidden;
   padding: 0.25em 1em;
   text-align: right;
 
@@ -90,4 +92,19 @@
 
 .c-chart-legend__item--white::before {
   background-color: $white;
+}
+
+
+// Animations --------------------------
+
+@keyframes chart {
+  0% {
+    width: 0;
+  }
+}
+
+.c-chart-table__bar {
+  .is-viewport & {
+    animation: 1.5s ease 1 forwards chart;
+  }
 }
