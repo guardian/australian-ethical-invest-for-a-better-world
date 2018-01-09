@@ -15,3 +15,150 @@
     animation: 1s ease 1 forwards bar-chart;
   }
 }
+
+
+// Pie chart ---------------------------
+
+@keyframes pie-chart {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.c-illustration-pie-chart {
+  .js & path {
+    transform-origin: 50% 50%;
+    transform: scale(0);
+
+    &:nth-child(2) {
+      animation-delay: 0.25s;
+    }
+  }
+
+  &.is-viewport path {
+    animation: 0.5s ease 1 forwards pie-chart;
+  }
+}
+
+
+// Solar panels ------------------------
+
+@keyframes solar-panels {}
+
+.c-illustration-solar-panels {
+  .js & {}
+
+  &.is-viewport {
+    animation: 1s ease 1 forwards solar-panels;
+  }
+}
+
+
+// Graph chart -------------------------
+
+@keyframes graph-chart {}
+
+.c-illustration-graph-chart {
+  .js & {}
+
+  &.is-viewport {
+    animation: 1s ease 1 forwards graph-chart;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+@keyframes bar-chart {
+  100% {
+    transform: translatex(0);
+  }
+}
+
+.c-illustration-bar-chart {
+  g {
+    .js & {
+      transform: translatex(-100%);
+    }
+
+    .is-viewport & {
+      animation: 1s ease 1 forwards bar-chart;
+    }
+  }
+}
+
+
+
+
+@keyframes pie-chart {}
+
+.c-illustration-pie-chart {
+  .js & {}
+
+  .is-viewport & {}
+}
+
+
+
+
+@keyframes solar-panels {}
+
+.c-illustration-solar-panels {
+  .js & {}
+
+  .is-viewport & {}
+}
+
+
+
+
+@keyframes graph-chart {}
+
+.c-illustration-graph-chart {
+  .js & {}
+
+  .is-viewport & {}
+}
+
+
+
+*/
+
+
+
+
+
+
+/*
+@keyframes graph-chart {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.c-illustration-graph-chart {
+  path {
+    animation: 2s ease-out 1 forwards graph-chart;
+
+    &:nth-child(2) {
+      stroke-dasharray: 305.03631591796875;
+      stroke-dashoffset: 305.03631591796875;
+    }
+
+    &:nth-child(3) {
+      stroke-dasharray: 255.6715087890625;
+      stroke-dashoffset: 255.6715087890625;
+    }
+  }
+}
+*/
