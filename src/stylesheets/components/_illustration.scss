@@ -43,103 +43,34 @@
 
 // Solar panels ------------------------
 
-@keyframes solar-panels {}
+@keyframes solar-panels {
+  100% {
+    transform: scale(1);
+  }
+}
 
 .c-illustration-solar-panels {
-  .js & {}
+  .js & path {
+    transform-origin: 50% 100%;
+    transform: scale(0);
 
-  &.is-viewport {
-    animation: 1s ease 1 forwards solar-panels;
+    &:nth-child(2) {
+      animation-delay: 0.25s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+  }
+
+  &.is-viewport path {
+    animation: 0.75s ease 1 forwards solar-panels;
   }
 }
 
 
 // Graph chart -------------------------
 
-@keyframes graph-chart {}
-
-.c-illustration-graph-chart {
-  .js & {}
-
-  &.is-viewport {
-    animation: 1s ease 1 forwards graph-chart;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-@keyframes bar-chart {
-  100% {
-    transform: translatex(0);
-  }
-}
-
-.c-illustration-bar-chart {
-  g {
-    .js & {
-      transform: translatex(-100%);
-    }
-
-    .is-viewport & {
-      animation: 1s ease 1 forwards bar-chart;
-    }
-  }
-}
-
-
-
-
-@keyframes pie-chart {}
-
-.c-illustration-pie-chart {
-  .js & {}
-
-  .is-viewport & {}
-}
-
-
-
-
-@keyframes solar-panels {}
-
-.c-illustration-solar-panels {
-  .js & {}
-
-  .is-viewport & {}
-}
-
-
-
-
-@keyframes graph-chart {}
-
-.c-illustration-graph-chart {
-  .js & {}
-
-  .is-viewport & {}
-}
-
-
-
-*/
-
-
-
-
-
-
-/*
 @keyframes graph-chart {
   100% {
     stroke-dashoffset: 0;
@@ -147,9 +78,7 @@
 }
 
 .c-illustration-graph-chart {
-  path {
-    animation: 2s ease-out 1 forwards graph-chart;
-
+  .js & path {
     &:nth-child(2) {
       stroke-dasharray: 305.03631591796875;
       stroke-dashoffset: 305.03631591796875;
@@ -160,5 +89,8 @@
       stroke-dashoffset: 255.6715087890625;
     }
   }
+
+  &.is-viewport path {
+    animation: 1.5s ease 1 forwards graph-chart;
+  }
 }
-*/
