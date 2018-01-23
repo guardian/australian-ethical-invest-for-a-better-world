@@ -1,6 +1,7 @@
 a {
   @extend %u-transition;
   color: inherit;
+  text-decoration: underline;
 
   &:hover {
     text-decoration: none;

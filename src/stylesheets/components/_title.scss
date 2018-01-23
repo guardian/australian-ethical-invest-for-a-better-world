@@ -19,9 +19,9 @@
     position: absolute;
     transform: translatex(-50%);
     width: 5em;
-
-    .c-section--aqua-forest & {
-      background-color: currentcolor;
-    }
   }
+}
+
+.c-section--aqua-forest .c-title--border::after {
+  background-color: currentcolor;
 }

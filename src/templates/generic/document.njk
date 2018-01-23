@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="js-off" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Australian Ethical – Invest for a Better World</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <script>document.documentElement.className=document.documentElement.className.replace('no-js','js');</script>
+    <link rel="stylesheet" href="{{ cdn }}main.css">
+    <script>document.documentElement.className=document.documentElement.className.replace('js-off','js-on');</script>
   </head>
   <body>
-    <div class="o-body-wrap">
+    <div class="o-body-wrap s-interactive">
       {% block regions %}{% endblock %}
     </div>
     <!-- /o-body-wrap -->
     <script src="https://interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js"></script>
     <script>iframeMessenger.enableAutoResize();</script>
-    <script src="scripts/index.js"></script>
+    <script src="{{ cdn }}main.js"></script>
   </body>
 </html>

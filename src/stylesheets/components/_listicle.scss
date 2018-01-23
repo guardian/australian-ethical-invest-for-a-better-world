@@ -74,20 +74,18 @@
   }
 }
 
-.c-listicle__item {
-  .js & {
-    opacity: 0;
-    transform: translatey(-2em);
-    visibility: hidden;
+.js-on & .c-listicle__item {
+  opacity: 0;
+  transform: translatey(-2em);
+  visibility: hidden;
 
-    @for $i from 1 through 8 {
-      &:nth-child(#{$i}) {
-        animation-delay: $i * 0.2s;
-      }
+  @for $i from 1 through 8 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * 0.2s;
     }
   }
+}
 
-  .is-viewport & {
-    animation: 0.5s ease 1 forwards listicle;
-  }
+.is-viewport .c-listicle__item {
+  animation: 0.5s ease 1 forwards listicle;
 }

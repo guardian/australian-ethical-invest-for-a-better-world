@@ -7,7 +7,7 @@
 }
 
 .c-illustration-bar-chart {
-  .js & g g {
+  .js-on & g g {
     transform: translatex(-100%);
   }
 
@@ -26,7 +26,7 @@
 }
 
 .c-illustration-pie-chart {
-  .js & path {
+  .js-on & path {
     transform-origin: 50% 50%;
     transform: scale(0);
 
@@ -50,7 +50,7 @@
 }
 
 .c-illustration-solar-panels {
-  .js & path {
+  .js-on & path {
     transform-origin: 50% 100%;
     transform: scale(0);
 
@@ -78,7 +78,7 @@
 }
 
 .c-illustration-graph-chart {
-  .js & path {
+  .js-on & path {
     &:nth-child(2) {
       stroke-dasharray: 305.03631591796875;
       stroke-dashoffset: 305.03631591796875;

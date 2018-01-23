@@ -15,6 +15,14 @@ npm run stage
 
 ## Production
 
+### Build locally
+
 ```
 npm run build
+```
+
+### Deploy to CDN
+
+```
+npm run deploy
 ```

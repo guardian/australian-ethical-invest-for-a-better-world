@@ -37,10 +37,6 @@
     content: "";
     display: block;
     height: 2px;
-
-    .c-section--aqua-forest & {
-      background-image: svg-encode('<svg viewBox="0 0 3 1"><circle cx=".5" cy=".5" r=".5" fill="#{$white}"/></svg>');
-    }
   }
 
   &::before {
@@ -49,5 +45,12 @@
 
   &::after {
     margin-top: 2em;
+  }
+}
+
+.c-section--aqua-forest .c-section__container {
+  &::before,
+  &::after {
+    background-image: svg-encode('<svg viewBox="0 0 3 1"><circle cx=".5" cy=".5" r=".5" fill="#{$white}"/></svg>');
   }
 }

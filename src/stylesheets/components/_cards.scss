@@ -14,10 +14,12 @@
   @media (min-width: 37.5em) {
     flex-direction: row;
     text-align: left;
+  }
+}
 
-    &.c-cards__item--swap {
-      text-align: right;
-    }
+.c-cards__item--swap {
+  @media (min-width: 37.5em) {
+    text-align: right;
   }
 }
 
@@ -31,11 +33,13 @@
   @media (min-width: 37.5em) {
     flex: 0 0 37.5%;
     margin: 0 2em 0 0;
+  }
+}
 
-    .c-cards__item--swap & {
-      margin: 0 0 0 2em;
-      order: 1;
-    }
+.c-cards__item--swap .c-cards__cover {
+  @media (min-width: 37.5em) {
+    margin: 0 0 0 2em;
+    order: 1;
   }
 }
 

@@ -103,8 +103,6 @@
   }
 }
 
-.c-chart-table__bar {
-  .is-viewport & {
-    animation: 1.5s ease 1 forwards chart;
-  }
+.is-viewport .c-chart-table__bar {
+  animation: 1.5s ease 1 forwards chart;
 }
